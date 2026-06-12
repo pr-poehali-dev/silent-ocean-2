@@ -5,7 +5,7 @@ import Icon from "@/components/ui/icon"
 const plans = [
   {
     name: "Старт",
-    price: "25 000 ₽",
+    price: "15 000 ₽",
     description: "Один скил для одной задачи",
     features: [
       "1 кастомный скил",
@@ -19,7 +19,7 @@ const plans = [
   },
   {
     name: "Бизнес",
-    price: "65 000 ₽",
+    price: "25 000 ₽",
     description: "Комплексный ИИ-ассистент под роль",
     features: [
       "До 3 скилов в связке",
@@ -33,7 +33,7 @@ const plans = [
   },
   {
     name: "Премиум",
-    price: "от 120 000 ₽",
+    price: "50 000 ₽",
     description: "Экосистема ИИ-ассистентов под команду",
     features: [
       "Неограниченное число скилов",
