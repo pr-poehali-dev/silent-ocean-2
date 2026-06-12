@@ -2,7 +2,7 @@ import { useState } from "react"
 import { MagneticButton } from "@/components/magnetic-button"
 import { GrainOverlay } from "@/components/grain-overlay"
 import { CustomCursor } from "@/components/custom-cursor"
-import { Shader, ChromaFlow, Swirl } from "shaders/react"
+import { ShaderBackground } from "@/components/shader-background"
 import Icon from "@/components/ui/icon"
 
 const GENERATE_URL = "https://functions.poehali.dev/c56c21d7-9348-4d67-89f6-562aaf629eed"
@@ -55,13 +55,7 @@ export default function Generator() {
       <CustomCursor />
       <GrainOverlay />
 
-      <div className="fixed inset-0 z-0" style={{ contain: "strict" }}>
-        <Shader className="h-full w-full">
-          <Swirl colorA="#1275d8" colorB="#e19136" speed={0.5} detail={0.6} blend={50} coarseX={40} coarseY={40} mediumX={40} mediumY={40} fineX={40} fineY={40} />
-          <ChromaFlow baseColor="#0066ff" upColor="#0066ff" downColor="#d1d1d1" leftColor="#e19136" rightColor="#e19136" intensity={0.9} radius={1.8} momentum={25} maskType="alpha" opacity={0.97} />
-        </Shader>
-        <div className="absolute inset-0 bg-black/40" />
-      </div>
+      <ShaderBackground overlay="bg-black/40" />
 
       <div className="relative z-10 mx-auto max-w-4xl px-6 py-24 md:px-12">
         {/* Header */}
