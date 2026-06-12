@@ -68,7 +68,7 @@ export default function Generator() {
           <div className="mb-4 inline-block rounded-full border border-foreground/20 bg-foreground/15 px-4 py-1.5 backdrop-blur-md">
             <p className="font-mono text-xs text-foreground/90">Генератор скилов</p>
           </div>
-          <h1 className="font-sans text-5xl font-light leading-tight tracking-tight text-foreground md:text-6xl">
+          <h1 className="font-sans text-4xl font-light leading-tight tracking-tight text-foreground md:text-6xl">
             Создай своего<br />
             <span className="text-foreground/50">ИИ-эксперта</span>
           </h1>
@@ -169,7 +169,7 @@ export default function Generator() {
             {!result && !loading && (
               <div className="flex flex-1 flex-col items-center justify-center py-12 text-center">
                 <Icon name="Sparkles" size={32} className="mb-4 text-foreground/20" />
-                <p className="font-mono text-xs text-foreground/40">Заполните форму слева<br />и нажмите «Сгенерировать»</p>
+                <p className="font-mono text-xs text-foreground/40">Заполните форму выше<br />и нажмите «Сгенерировать»</p>
               </div>
             )}
 
