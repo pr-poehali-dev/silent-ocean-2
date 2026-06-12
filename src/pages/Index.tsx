@@ -7,7 +7,7 @@ import { PricingSection } from "@/components/sections/pricing-section"
 import { AboutSection } from "@/components/sections/about-section"
 import { ContactSection } from "@/components/sections/contact-section"
 import { MagneticButton } from "@/components/magnetic-button"
-import { useRef, useEffect } from "react"
+import { useRef, useEffect, useState } from "react"
 import { useNavigate } from "react-router-dom"
 
 export default function Index() {
