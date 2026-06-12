@@ -8,6 +8,7 @@ import { AboutSection } from "@/components/sections/about-section"
 import { ContactSection } from "@/components/sections/contact-section"
 import { MagneticButton } from "@/components/magnetic-button"
 import { useRef, useEffect, useState } from "react"
+import { useNavigate } from "react-router-dom"
 
 export default function Index() {
   const scrollContainerRef = useRef<HTMLDivElement>(null)
@@ -17,6 +18,7 @@ export default function Index() {
   const touchStartX = useRef(0)
   const shaderContainerRef = useRef<HTMLDivElement>(null)
   const scrollThrottleRef = useRef<number>()
+  const navigate = useNavigate()
 
   useEffect(() => {
     const checkShaderReady = () => {
@@ -284,6 +286,9 @@ export default function Index() {
               </MagneticButton>
               <MagneticButton size="lg" variant="secondary" onClick={() => scrollToSection(2)}>
                 Наши услуги
+              </MagneticButton>
+              <MagneticButton size="lg" variant="secondary" onClick={() => navigate("/generator")}>
+                Попробовать бесплатно
               </MagneticButton>
             </div>
           </div>
