@@ -7,7 +7,7 @@ import { PricingSection } from "@/components/sections/pricing-section"
 import { AboutSection } from "@/components/sections/about-section"
 import { ContactSection } from "@/components/sections/contact-section"
 import { MagneticButton } from "@/components/magnetic-button"
-import { useRef, useEffect, useState } from "react"
+import { useRef, useEffect } from "react"
 import { useNavigate } from "react-router-dom"
 
 export default function Index() {
@@ -149,9 +149,7 @@ export default function Index() {
       <ShaderBackground overlay="bg-black/20" />
 
       <nav
-        className={`fixed left-0 right-0 top-0 z-50 flex items-center justify-between px-6 py-6 transition-opacity duration-700 md:px-12 ${
-          isLoaded ? "opacity-100" : "opacity-0"
-        }`}
+        className="fixed left-0 right-0 top-0 z-50 flex items-center justify-between px-6 py-6 md:px-12"
       >
         <button
           onClick={() => scrollToSection(0)}
@@ -190,9 +188,7 @@ export default function Index() {
       <div
         ref={scrollContainerRef}
         data-scroll-container
-        className={`relative z-10 flex h-screen overflow-x-auto overflow-y-hidden transition-opacity duration-700 ${
-          isLoaded ? "opacity-100" : "opacity-0"
-        }`}
+        className="relative z-10 flex h-screen overflow-x-auto overflow-y-hidden"
         style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
       >
         {/* Hero Section */}
