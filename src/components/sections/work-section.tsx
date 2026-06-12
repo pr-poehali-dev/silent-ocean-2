@@ -15,32 +15,32 @@ export function WorkSection() {
           }`}
         >
           <h2 className="mb-2 font-sans text-5xl font-light tracking-tight text-foreground md:text-6xl lg:text-7xl">
-            Проекты
+            Кейсы
           </h2>
-          <p className="font-mono text-sm text-foreground/60 md:text-base">/ Избранные работы</p>
+          <p className="font-mono text-sm text-foreground/60 md:text-base">/ Готовые ИИ-ассистенты</p>
         </div>
 
         <div className="space-y-6 md:space-y-8">
           {[
             {
               number: "01",
-              title: "ТехноСтарт",
-              category: "Корпоративный портал",
+              title: "Онлайн-школа английского",
+              category: "ИИ-методолог — структурирует уроки и даёт обратную связь",
               year: "2024",
               direction: "left",
             },
             {
               number: "02",
-              title: "АльфаТрейд",
-              category: "Финтех платформа",
+              title: "E-commerce бренд одежды",
+              category: "ИИ-копирайтер — пишет карточки товаров и посты для соцсетей",
               year: "2024",
               direction: "right",
             },
             {
               number: "03",
-              title: "МедиаПульс",
-              category: "Медиа сервис",
-              year: "2023",
+              title: "B2B SaaS стартап",
+              category: "ИИ-менеджер — квалифицирует лиды и закрывает на демо",
+              year: "2025",
               direction: "left",
             },
           ].map((project, i) => (

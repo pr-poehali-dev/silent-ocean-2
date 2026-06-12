@@ -15,31 +15,31 @@ export function ServicesSection() {
           }`}
         >
           <h2 className="mb-2 font-sans text-5xl font-light tracking-tight text-foreground md:text-6xl lg:text-7xl">
-            Услуги
+            Скилы
           </h2>
-          <p className="font-mono text-sm text-foreground/60 md:text-base">/ Наши компетенции</p>
+          <p className="font-mono text-sm text-foreground/60 md:text-base">/ Что умеет ваш ИИ-ассистент</p>
         </div>
 
         <div className="grid gap-8 md:grid-cols-2 md:gap-x-16 md:gap-y-12 lg:gap-x-24">
           {[
             {
-              title: "Веб-разработка",
-              description: "Создание современных веб-приложений любой сложности",
+              title: "ИИ-методолог курсов",
+              description: "Ассистент, который помогает авторам онлайн-школ структурировать программы, писать модули и давать обратную связь ученикам",
               direction: "top",
             },
             {
-              title: "UI/UX Дизайн",
-              description: "Проектирование удобных и красивых интерфейсов",
+              title: "ИИ-копирайтер",
+              description: "Генерирует продающие тексты, посты и письма в голосе вашего бренда — без брифов и правок",
               direction: "right",
             },
             {
-              title: "Мобильные приложения",
-              description: "Кроссплатформенная разработка для iOS и Android",
+              title: "ИИ-менеджер по продажам",
+              description: "Квалифицирует лиды, отвечает на возражения и ведёт клиента к сделке 24/7",
               direction: "left",
             },
             {
-              title: "Консалтинг",
-              description: "Техническая экспертиза и стратегическое планирование",
+              title: "ИИ-эксперт под задачу",
+              description: "Кастомный скил для любой роли: HR, финансист, юрист, аналитик — под специфику вашего бизнеса",
               direction: "bottom",
             },
           ].map((service, i) => (
