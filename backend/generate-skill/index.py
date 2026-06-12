@@ -40,7 +40,7 @@ def handler(event: dict, context) -> dict:
 4. Стиль и тон общения
 5. Примеры типичных ситуаций и как на них реагировать"""
 
-        api_key = os.environ.get("ANTHROPIC_API_KEY", "")
+        api_key = os.environ.get("ANTHROPIC_API_KEY") or os.environ.get("API_KEY", "")
         if not api_key:
             return {"statusCode": 500, "headers": headers, "body": json.dumps({"error": "API ключ не настроен"}, ensure_ascii=False)}
 
